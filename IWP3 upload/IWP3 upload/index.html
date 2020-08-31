@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Book issue portal</title>
+		<link rel="stylesheet" href="css.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1 class="heading">BOOK ISSUE PORTAL</h1>
+		<form class="form">
+			<div class="inp_f">
+				<p class="p_tag">Title</p>
+				<input type="text" id="id_title" placeholder="Ikigai" required>
+			</div>
+			<div class="inp_f">
+				<p class="p_tag">Author Names</p>
+				<input type="text" class="id_auth" placeholder="Author 1" required><br>
+				<input type="text" class="id_auth" placeholder="Author 2" required><br>
+				<input type="text" class="id_auth" placeholder="Author 3" required><br>
+				<input type="text" class="id_auth" placeholder="Author 4" required><br>
+				<input type="text" class="id_auth" placeholder="Author 5" required>
+			</div>
+			<div class="inp_f">
+				<p class="p_tag">ISBN</p>
+				<input type="text" id="id_isbn" placeholder="978-3-16-148410-0" required>
+			</div>
+			<div class="inp_f">
+				<p class="p_tag">Publisher</p>
+				<input type="text" id="id_pub" placeholder="Publisher Name" required>
+			</div>
+			<div class="inp_f">
+				<p class="p_tag">Edition</p>
+				<input type="text" id="id_ed" placeholder="Edition" required>
+			</div>
+			<div class="inp_f">
+				<p class="p_tag">Price</p>
+				<input type="text" id="id_price" placeholder="Price" required>
+			</div>
+			<div class="inp_f">
+				<p class="p_tag">Date of publication</p>
+				<input type="date" id="id_dop" required>
+			</div>
+			<button type="submit" class="submit">Submit</button>
+		</form>
+		<div class="overlay">
+			<div class="box">
+				<p class="some_text">Are you sure you want to issue a book with the details you entered?</p>
+				<button class="submit2">Yes</button>
+			</div>
+		</div>
+		<table>
+			<tr>
+				<td colspan="2">BOOK ISSUED</td>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td id="id"></td>
+			</tr>
+			<tr>
+				<td>ISBN</td>
+				<td id="isbn"></td>
+			</tr>
+			<tr>
+				<td>Date of Issue</td>
+				<td id="doi"></td>
+			</tr>
+			<tr>
+				<td>Date of Return</td>
+				<td id="dor"></td>
+			</tr>
+		</table>
+	</body>
+	<script src="js.js"></script>
+</html>
